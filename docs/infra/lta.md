@@ -10,13 +10,14 @@ The working group has the aim to identify and coordinate procedures and techniqu
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Svenia Pohlkamp, Tobias Steinke
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
-- Further links will be added later.
+- Working Group Charter on Zenodo: [https://doi.org/10.5281/zenodo.6451455](https://doi.org/10.5281/zenodo.6451455)
+- Long-term Preservation in NFDI – Status and Perspectives (EN): [https://zenodo.org/records/11109480](https://zenodo.org/records/11109480)
+- Langzeitarchivierung in der NFDI – Stand und Perspektiven (DE): [https://zenodo.org/records/10822613](https://zenodo.org/records/10822613)
 
 ## Mailing list
 
@@ -25,6 +26,8 @@ The working group has the aim to identify and coordinate procedures and techniqu
 
 ## Coordinators
 
-- Peter Leinen
-- Thomas Staecker
+- Svenia Pohlkamp
+- Tobias Steinke
+- Katharina Markus
+- Angela Hammer
 

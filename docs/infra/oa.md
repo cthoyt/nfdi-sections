@@ -10,7 +10,7 @@ The NFDI Overall Architecture Working Group aims to develop a shared vision and 
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Marius Politze, Philipp Wieder
 :::
 
 ## Ressources

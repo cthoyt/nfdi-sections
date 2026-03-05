@@ -10,12 +10,12 @@ The working group aims to consolidate processes, policies and architectures in o
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Marius Politze, Wolfgang Pempe
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/6421866](https://zenodo.org/records/6421866)
 - Further links will be added later.
 
 ## Mailing list

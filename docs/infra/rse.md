@@ -10,12 +10,12 @@ The working group networks the NFDI specialist consortia in software-related asp
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Florian Thiery, Bernd Flemisch
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/6483449](https://zenodo.org/records/6483449)
 - Further links will be added later.
 
 ## Mailing list

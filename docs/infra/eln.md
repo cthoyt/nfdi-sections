@@ -10,12 +10,12 @@ The working group includes representatives from different NFDI consortia, with a
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Nicole Jung, Felix Bach
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/6510247](https://zenodo.org/records/6510247)
 - Further links will be added later.
 
 ## Mailing list

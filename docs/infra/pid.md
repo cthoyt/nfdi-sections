@@ -10,13 +10,13 @@ The aim is to develop a common strategy for the implementation and extension of 
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Sven Bingert, Stephanie Hagemann-Wolholt
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: [https://doi.org/10.5281/zenodo.6507760](https://doi.org/10.5281/zenodo.6507760)
-- Further links will be added later.
+- Working Group Charter on Zenodo: [https://zenodo.org/records/14961772](https://zenodo.org/records/14961772)
+- PID4NFDI Open Hour: regular community calls open to all NFDI members — see [PID4NFDI](https://www.nfdi.de/pid4nfdi/) for schedule and registration.
 
 ## Mailing list
 

@@ -10,12 +10,12 @@ The working group aims to coordinate the DMP activities of the NFDI consortia. I
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Daniela Hausen, Jürgen Windeck
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/7540682](https://zenodo.org/records/7540682)
 - Further links will be added later.
 
 ## Mailing list

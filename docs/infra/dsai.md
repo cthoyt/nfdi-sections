@@ -10,7 +10,7 @@ The working group aims to help improve and increase hands-on adoption and practi
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Adamantios Koumpis, Arnim Bleier, Sonja Schimmler
 :::
 
 ## Ressources
@@ -27,4 +27,5 @@ The working group aims to help improve and increase hands-on adoption and practi
 
 - Adamantios Koumpis
 - Arnim Bleier
+- Sonja Schimmler
 

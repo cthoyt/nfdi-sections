@@ -10,12 +10,12 @@ The immense heterogeneity of scientific data and the data combination problems i
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Bernhard Seeger, Dirk Riehle
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/6519590](https://zenodo.org/records/6519590)
 - Further links will be added later.
 
 ## Mailing list

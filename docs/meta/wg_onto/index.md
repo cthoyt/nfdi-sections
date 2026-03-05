@@ -1,23 +1,24 @@
 ---
-title: WG Ontotolgy Harmonization
+title: WG Ontology Harmonization and Mapping
 ---
 
 # Working Group Ontology Harmonization and Mapping
 
+The consistent use of terminology and the organisation of terms in structured ontologies are necessary prerequisites for FAIR data, especially for its reuse by other scientific communities and executability by machines. Each field of research contributes its own terminology that reflects its specific needs. This results in conceptual overlaps and, as in natural language, more than one way of expressing facts.
 
-Lorum ipsum.
+- **Harmonization** aims to develop a common terminology shared across domains
+- **Mapping** involves agreeing on a clearly defined mapping as an interface between terminologies that remain separate
 
-:::info Meetings
-- Regularity: Every 4 weeks (TBD)
-- Day/Time: TBD
-- Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+The working group coordinates this work, which is essential for linking research data across NFDI consortia.
+
+:::info Contact
+- Contact person: Philip Strömert
 :::
 
-## Ressources
+## Resources
 
-- Working Group Charter on Zenodo: [https://doi.org/10.5281/zenodo.6726519](https://doi.org/10.5281/zenodo.6726519)
-- Further links will be added later.
+- Working Group Charter on Zenodo: [https://doi.org/10.5281/zenodo.6726518](https://doi.org/10.5281/zenodo.6726518)
+- GitHub: [github.com/nfdi-de/section-metadata-wg-onto](https://github.com/nfdi-de/section-metadata-wg-onto) (issues, self-organisation)
 
 ## Mailing list
 

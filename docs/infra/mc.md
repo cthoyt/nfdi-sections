@@ -10,12 +10,12 @@ The key objective of all NFDI consortia is to systematically register and provid
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Alexander Sczyrba
 :::
 
 ## Ressources
 
-- Working Group Charter on Zenodo: tba
+- Working Group Charter on Zenodo: [https://zenodo.org/records/6510971](https://zenodo.org/records/6510971)
 - Further links will be added later.
 
 ## Mailing list

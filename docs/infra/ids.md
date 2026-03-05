@@ -10,7 +10,7 @@ Scientific disciplines deal with the proper management of personal data of human
 - Regularity: Every 4 weeks (TBD)
 - Day/Time: TBD
 - Next meeting: TBD (YYYY-MM-DD, HH:MM TZ)
-- Contact: TBD
+- Contact: Petra Ritter
 :::
 
 ## Ressources
