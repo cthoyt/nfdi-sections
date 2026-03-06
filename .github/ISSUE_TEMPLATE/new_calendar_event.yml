@@ -69,10 +69,36 @@ body:
       label: Organiser
       description: Select the organiser responsible for this event
       options:
+        - Section-Meta
+        - Section ELSA
+        - Section Infra
+        - Section Edu
+        - Section Industry
+        - Section International
         - WG Onto (Section-Meta)
         - WG Terminology Services (Section-Meta)
+        - WG Ethics (Section ELSA)
+        - WG Data Protection (Section ELSA)
+        - WG LARA (Section ELSA)
+        - WG Overall Architecture (OA) (Section Infra)
+        - WG Data Integration (DI) (Section Infra)
+        - WG Data Management Planning (DMP) (Section Infra)
+        - WG Data Science and Artificial Intelligence (DSAI) (Section Infra)
         - WG ELN (Section Infra)
+        - WG Identity and Access Management (IAM) (Section Infra)
+        - WG Infrastructure and Data Security (IDS) (Section Infra)
+        - WG Long-term Access and Preservation (LTA) (Section Infra)
+        - WG Multi-Cloud (MC) (Section Infra)
+        - WG Persistent Identifiers (PID) (Section Infra)
+        - WG Research Software Engineering (RSE) (Section Infra)
         - WG Dalia (Section Edu)
+        - WG Benefits, Costs and Risks (Section Industry)
+        - WG Cooperation Models and Agreements (Section Industry)
+        - WG Data Spaces & Interoperability (Section Industry)
+        - WG Knowledge Transfer and Impact (Section Industry)
+        - WG Landscape Survey (Section International)
+        - WG EOSC Node Germany (Section International)
+        - WG Outreach (Section International)
     validations:
       required: true
   - type: textarea

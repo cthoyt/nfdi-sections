@@ -13,19 +13,43 @@
       "color": "#0073AA"
     },
     "section-elsa": {
-      "label": "Section Elsa",
-      "color": "#0073AA"
+      "label": "Section ELSA",
+      "color": "#7B2D8B"
     },
     "section-industry": {
       "label": "Section Industry Engagement",
       "color": "#009688"
     },
-    "section-internationalisation": {
-      "label": "Section International Engagement",
+    "section-international": {
+      "label": "Section International",
       "color": "#4CAF50"
     }
   },
   "organisers": [
+    {
+      "label": "Section-Meta",
+      "category": "section-meta"
+    },
+    {
+      "label": "Section ELSA",
+      "category": "section-elsa"
+    },
+    {
+      "label": "Section Infra",
+      "category": "section-infra"
+    },
+    {
+      "label": "Section Edu",
+      "category": "section-edu"
+    },
+    {
+      "label": "Section Industry",
+      "category": "section-industry"
+    },
+    {
+      "label": "Section International",
+      "category": "section-international"
+    },
     {
       "label": "WG Onto (Section-Meta)",
       "category": "section-meta"
@@ -35,12 +59,16 @@
       "category": "section-meta"
     },
     {
-      "label": "WG ELN (Section Infra)",
-      "category": "section-infra"
+      "label": "WG Ethics (Section ELSA)",
+      "category": "section-elsa"
     },
     {
-      "label": "WG Dalia (Section Edu)",
-      "category": "section-edu"
+      "label": "WG Data Protection (Section ELSA)",
+      "category": "section-elsa"
+    },
+    {
+      "label": "WG LARA (Section ELSA)",
+      "category": "section-elsa"
     },
     {
       "label": "WG Overall Architecture (OA) (Section Infra)",
@@ -56,6 +84,10 @@
     },
     {
       "label": "WG Data Science and Artificial Intelligence (DSAI) (Section Infra)",
+      "category": "section-infra"
+    },
+    {
+      "label": "WG ELN (Section Infra)",
       "category": "section-infra"
     },
     {
@@ -75,12 +107,44 @@
       "category": "section-infra"
     },
     {
+      "label": "WG Persistent Identifiers (PID) (Section Infra)",
+      "category": "section-infra"
+    },
+    {
       "label": "WG Research Software Engineering (RSE) (Section Infra)",
       "category": "section-infra"
     },
     {
-      "label": "WG Persistent Identifiers (PID) (Section Infra)",
-      "category": "section-infra"
+      "label": "WG Dalia (Section Edu)",
+      "category": "section-edu"
+    },
+    {
+      "label": "WG Benefits, Costs and Risks (Section Industry)",
+      "category": "section-industry"
+    },
+    {
+      "label": "WG Cooperation Models and Agreements (Section Industry)",
+      "category": "section-industry"
+    },
+    {
+      "label": "WG Data Spaces & Interoperability (Section Industry)",
+      "category": "section-industry"
+    },
+    {
+      "label": "WG Knowledge Transfer and Impact (Section Industry)",
+      "category": "section-industry"
+    },
+    {
+      "label": "WG Landscape Survey (Section International)",
+      "category": "section-international"
+    },
+    {
+      "label": "WG EOSC Node Germany (Section International)",
+      "category": "section-international"
+    },
+    {
+      "label": "WG Outreach (Section International)",
+      "category": "section-international"
     }
   ]
 }

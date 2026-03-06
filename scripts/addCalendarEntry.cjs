@@ -141,6 +141,7 @@ function main() {
     allDay,
     location: getField(f, 'location')?.trim() || undefined,
     url: getField(f, 'link (optional)', 'url')?.trim() || undefined,
+    website: getField(f, 'event.website (optional)', 'event.website', 'website')?.trim() || undefined,
     type: getField(f, 'type')?.trim() || 'Event',
     organiser: organiser || undefined,
     category,
