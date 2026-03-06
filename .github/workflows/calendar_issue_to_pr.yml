@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
 
       - name: Setup Node
         uses: actions/setup-node@v3
@@ -46,9 +48,18 @@ jobs:
               core.info(`Label may already be present: ${e.message}`);
             }
 
+      - name: Write issue body to file
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = context.payload.issue.body || '';
+            fs.writeFileSync('issue_body.txt', body, 'utf8');
+            core.info(`Issue body written (${body.length} chars)`);
+
       - name: Append calendar entry
         env:
-          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_BODY_FILE: issue_body.txt
           ISSUE_USER: ${{ github.event.issue.user.login }}
         run: |
           node scripts/addCalendarEntry.cjs
@@ -57,8 +68,11 @@ jobs:
         run: jq empty static/calendar.json
 
       - name: Create Pull Request
+        id: cpr
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.PAT_TOKEN }}
+          base: main
           commit-message: "chore(calendar): add event from #${{ github.event.issue.number }}"
           title: "Add calendar event: #${{ github.event.issue.number }}"
           body: |
@@ -66,3 +80,9 @@ jobs:
             Please review the event details in `static/calendar.json`.
           branch: chore/add-calendar-${{ github.event.issue.number }}
           labels: calendar
+
+      - name: Verify PR was created
+        if: steps.cpr.outputs.pull-request-number == ''
+        run: |
+          echo "::error::No PR was created. Either calendar.json was not modified or the token lacks pull-request write permissions."
+          exit 1

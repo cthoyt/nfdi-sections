@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 /*
   Append a calendar entry to static/calendar.json based on an Issue Form body.
-  Expects env:
-    ISSUE_BODY - full issue markdown body
-    ISSUE_USER - issue author login (optional)
+  Expects env (one of):
+    ISSUE_BODY_FILE - path to a file containing the full issue markdown body (preferred)
+    ISSUE_BODY      - full issue markdown body as a string (fallback)
+    ISSUE_USER      - issue author login (optional)
 */
 const fs = require('fs');
 const path = require('path');
@@ -91,9 +92,12 @@ function buildBerlinISO(dateStr, timeStr = '00:00') {
 }
 
 function main() {
-  const body = process.env.ISSUE_BODY || '';
+  const bodyFile = process.env.ISSUE_BODY_FILE;
+  const body = bodyFile
+    ? fs.readFileSync(bodyFile, 'utf8')
+    : (process.env.ISSUE_BODY || '');
   if (!body) {
-    console.error('ISSUE_BODY env var is empty');
+    console.error('No issue body: set ISSUE_BODY_FILE or ISSUE_BODY env var');
     process.exit(1);
   }
   const f = parseIssueBody(body);
