@@ -14,6 +14,13 @@ jobs:
     if: contains(toJson(github.event.issue.labels), 'calendar') || startsWith(github.event.issue.title, '[Calendar]')
     runs-on: ubuntu-latest
     steps:
+      - name: Check PAT_TOKEN secret
+        run: |
+          if [ -z "${{ secrets.PAT_TOKEN }}" ]; then
+            echo "::error::PAT_TOKEN secret is not set. Go to Settings → Secrets and variables → Actions and add a PAT_TOKEN repository secret."
+            exit 1
+          fi
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
