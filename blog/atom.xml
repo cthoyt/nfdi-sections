@@ -2,38 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://nfdi-de.github.io/nfdi-sections/blog</id>
     <title>NFDI Sections Blog</title>
-    <updated>2025-09-21T00:00:00.000Z</updated>
+    <updated>2026-03-06T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://nfdi-de.github.io/nfdi-sections/blog"/>
     <subtitle>NFDI Sections Blog</subtitle>
     <icon>https://nfdi-de.github.io/nfdi-sections/img/nfdi_favicon.png</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
-        <id>https://nfdi-de.github.io/nfdi-sections/blog/welcome</id>
-        <link href="https://nfdi-de.github.io/nfdi-sections/blog/welcome"/>
-        <updated>2025-09-21T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
-        <author>
-            <name>Oliver Koepler</name>
-            <uri>https://www.linkedin.com/in/oliver-koepler-b55a995/</uri>
-        </author>
-        <category label="Section Metadata" term="Section Metadata"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First Blog Post]]></title>
-        <id>https://nfdi-de.github.io/nfdi-sections/blog/first-blog-post</id>
-        <link href="https://nfdi-de.github.io/nfdi-sections/blog/first-blog-post"/>
-        <updated>2025-09-20T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet...]]></summary>
-        <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+        <title type="html"><![CDATA[Invitation: Section Meta Meeting – 31 March 2026]]></title>
+        <id>https://nfdi-de.github.io/nfdi-sections/blog/section-meta-meeting-march-2026</id>
+        <link href="https://nfdi-de.github.io/nfdi-sections/blog/section-meta-meeting-march-2026"/>
+        <updated>2026-03-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[We warmly invite all NFDI members and other interested parties to join the upcoming Section Meta meeting on 31 March 2026 at 4:00 pm (CET).]]></summary>
+        <content type="html"><![CDATA[<p>We warmly invite all NFDI members and other interested parties to join the upcoming <strong>Section Meta meeting</strong> on <strong>31 March 2026 at 4:00 pm (CET)</strong>.</p>
+<p>The meeting will cover the following topics:</p>
+<ul>
+<li><strong>Presentation and discussion</strong> – Proposal for the Ramp-Up phase of the TS4NFDI Basic Service project</li>
+<li><strong>Presentation and discussion</strong> – "Recommendation to members of NFDI e.V. for the registration of NFDI data repositories in re3data"</li>
+<li><strong>Presentation</strong> – NFDI Sections Knowledge Base</li>
+<li><strong>Updates from the Working Groups</strong></li>
+</ul>
+<p>The meeting is open to everyone with an interest in research data metadata and NFDI infrastructure. We look forward to seeing you there!</p>
+<p>For connection details, please watch for the meeting announcement on the Section Meta mailing list.</p>]]></content>
         <author>
             <name>Oliver Koepler</name>
             <uri>https://www.linkedin.com/in/oliver-koepler-b55a995/</uri>

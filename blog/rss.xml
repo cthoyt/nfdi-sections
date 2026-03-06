@@ -4,33 +4,26 @@
         <title>NFDI Sections Blog</title>
         <link>https://nfdi-de.github.io/nfdi-sections/blog</link>
         <description>NFDI Sections Blog</description>
-        <lastBuildDate>Sun, 21 Sep 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 06 Mar 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <item>
-            <title><![CDATA[Welcome]]></title>
-            <link>https://nfdi-de.github.io/nfdi-sections/blog/welcome</link>
-            <guid>https://nfdi-de.github.io/nfdi-sections/blog/welcome</guid>
-            <pubDate>Sun, 21 Sep 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Section Metadata</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://nfdi-de.github.io/nfdi-sections/blog/first-blog-post</link>
-            <guid>https://nfdi-de.github.io/nfdi-sections/blog/first-blog-post</guid>
-            <pubDate>Sat, 20 Sep 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
+            <title><![CDATA[Invitation: Section Meta Meeting – 31 March 2026]]></title>
+            <link>https://nfdi-de.github.io/nfdi-sections/blog/section-meta-meeting-march-2026</link>
+            <guid>https://nfdi-de.github.io/nfdi-sections/blog/section-meta-meeting-march-2026</guid>
+            <pubDate>Fri, 06 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We warmly invite all NFDI members and other interested parties to join the upcoming Section Meta meeting on 31 March 2026 at 4:00 pm (CET).]]></description>
+            <content:encoded><![CDATA[<p>We warmly invite all NFDI members and other interested parties to join the upcoming <strong>Section Meta meeting</strong> on <strong>31 March 2026 at 4:00 pm (CET)</strong>.</p>
+<p>The meeting will cover the following topics:</p>
+<ul>
+<li><strong>Presentation and discussion</strong> – Proposal for the Ramp-Up phase of the TS4NFDI Basic Service project</li>
+<li><strong>Presentation and discussion</strong> – "Recommendation to members of NFDI e.V. for the registration of NFDI data repositories in re3data"</li>
+<li><strong>Presentation</strong> – NFDI Sections Knowledge Base</li>
+<li><strong>Updates from the Working Groups</strong></li>
+</ul>
+<p>The meeting is open to everyone with an interest in research data metadata and NFDI infrastructure. We look forward to seeing you there!</p>
+<p>For connection details, please watch for the meeting announcement on the Section Meta mailing list.</p>]]></content:encoded>
             <category>Section Metadata</category>
         </item>
     </channel>
