@@ -1,4 +1,4 @@
-import React, {useMemo, useEffect, useState, useCallback} from 'react';
+import React, {useMemo, useEffect, useState, useCallback, useRef} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {Calendar as RBCalendar, Views, dateFnsLocalizer} from 'react-big-calendar';
 import {format, parse, startOfWeek, getDay} from 'date-fns';
@@ -9,9 +9,7 @@ const localizer = dateFnsLocalizer({format, parse, startOfWeek, getDay, locales}
 
 function useCalendarData() {
   const eventsUrl = useBaseUrl('/calendar.json');
-  const organisersUrl = useBaseUrl('/calendar-organisers.json');
   const [events, setEvents] = useState([]);
-  const [categoryMap, setCategoryMap] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -20,17 +18,10 @@ function useCalendarData() {
     async function load() {
       try {
         setLoading(true);
-        const [evRes, orgRes] = await Promise.all([
-          fetch(eventsUrl, {cache: 'no-cache'}),
-          fetch(organisersUrl, {cache: 'no-cache'}),
-        ]);
-        if (!evRes.ok) throw new Error(`Failed to load calendar: ${evRes.status}`);
-        const [data, organisersData] = await Promise.all([
-          evRes.json(),
-          orgRes.ok ? orgRes.json() : {},
-        ]);
+        const res = await fetch(eventsUrl, {cache: 'no-cache'});
+        if (!res.ok) throw new Error(`Failed to load calendar: ${res.status}`);
+        const data = await res.json();
         if (cancelled) return;
-        setCategoryMap(organisersData?.categories || {});
         const mapped = (data || []).map(ev => ({
           title: ev.title,
           start: new Date(ev.start),
@@ -41,6 +32,7 @@ function useCalendarData() {
           location: ev.location,
           description: ev.description,
           type: ev.type,
+          organiser: ev.organiser,
           category: ev.category,
           color: ev.color,
         }));
@@ -53,60 +45,99 @@ function useCalendarData() {
     }
     load();
     return () => { cancelled = true };
-  }, [eventsUrl, organisersUrl]);
+  }, [eventsUrl]);
 
-  return {events, categoryMap, loading, error};
+  return {events, loading, error};
 }
 
-function Legend({events, categoryMap, enabledCategories, onToggleCategory, onShowAll}) {
-  const items = useMemo(() => {
-    return Object.entries(categoryMap).map(([key, cat]) => ({
-      key,
-      label: cat.label || key,
-      color: cat.color || 'var(--ifm-color-primary)',
-    }));
-  }, [categoryMap]);
+function OrganiserFilter({allOrganisers, selectedOrganisers, onToggle, onSelectAll, onClearAll}) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef(null);
 
-  if (!items.length) return null;
+  useEffect(() => {
+    function handleOutside(e) {
+      if (ref.current && !ref.current.contains(e.target)) setOpen(false);
+    }
+    document.addEventListener('mousedown', handleOutside);
+    return () => document.removeEventListener('mousedown', handleOutside);
+  }, []);
+
+  const allSelected = selectedOrganisers.size === allOrganisers.length;
+  const label = allSelected
+    ? 'All organisers'
+    : `${selectedOrganisers.size} of ${allOrganisers.length} selected`;
+
   return (
-    <div style={{display:'flex', flexWrap:'wrap', gap:'0.5rem', marginBottom:'0.75rem', alignItems:'center'}}>
-      <strong style={{marginRight:'0.25rem'}}>Filter:</strong>
-      {items.map((it) => {
-        const active = enabledCategories.has(it.key);
-        return (
-          <button
-            key={it.key}
-            type="button"
-            onClick={() => onToggleCategory(it.key)}
-            title={active ? 'Click to hide this category' : 'Click to show this category'}
-            style={{
-              display:'inline-flex', alignItems:'center', gap:'0.4rem',
-              fontSize:'0.9rem', padding:'0.25rem 0.5rem', cursor:'pointer',
-              borderRadius: '4px', border: '1px solid var(--ifm-color-emphasis-300)',
-              background: active ? 'var(--ifm-background-surface-color)' : 'var(--ifm-background-color)',
-              opacity: active ? 1 : 0.5,
-            }}
-          >
-            <span style={{width:12, height:12, background:it.color, border:'1px solid var(--ifm-color-emphasis-300)'}} />
-            <span>{it.label}</span>
-          </button>
-        );
-      })}
-      <button type="button" onClick={onShowAll} style={{marginLeft:'0.25rem'}} className="button button--sm button--secondary">
-        Reset
+    <div style={{position: 'relative', display: 'inline-block', marginBottom: '0.75rem'}} ref={ref}>
+      <button
+        type="button"
+        onClick={() => setOpen(o => !o)}
+        style={{
+          display: 'inline-flex', alignItems: 'center', gap: '0.5rem',
+          padding: '0.3rem 0.75rem',
+          border: '1px solid var(--ifm-color-emphasis-300)',
+          borderRadius: '4px',
+          background: 'var(--ifm-background-surface-color)',
+          cursor: 'pointer',
+          fontSize: '0.9rem',
+        }}
+      >
+        <strong>Organiser:</strong> {label} {open ? '▴' : '▾'}
       </button>
+      {open && (
+        <div style={{
+          position: 'absolute', top: 'calc(100% + 4px)', left: 0, zIndex: 200,
+          background: 'var(--ifm-background-surface-color)',
+          border: '1px solid var(--ifm-color-emphasis-300)',
+          borderRadius: '4px',
+          padding: '0.5rem',
+          minWidth: '280px',
+          maxHeight: '340px',
+          overflowY: 'auto',
+          boxShadow: '0 4px 16px rgba(0,0,0,0.15)',
+        }}>
+          <div style={{
+            display: 'flex', gap: '0.5rem',
+            marginBottom: '0.5rem', paddingBottom: '0.5rem',
+            borderBottom: '1px solid var(--ifm-color-emphasis-200)',
+          }}>
+            <button type="button" className="button button--sm button--secondary" onClick={onSelectAll}>Select all</button>
+            <button type="button" className="button button--sm button--secondary" onClick={onClearAll}>Clear all</button>
+          </div>
+          {allOrganisers.map(org => (
+            <label
+              key={org}
+              style={{
+                display: 'flex', alignItems: 'center', gap: '0.5rem',
+                padding: '0.2rem 0.25rem', cursor: 'pointer', borderRadius: '3px',
+              }}
+            >
+              <input
+                type="checkbox"
+                checked={selectedOrganisers.has(org)}
+                onChange={() => onToggle(org)}
+              />
+              <span style={{fontSize: '0.9rem'}}>{org}</span>
+            </label>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
 
 export default function Calendar() {
-  const {events, categoryMap, loading, error} = useCalendarData();
-  const [enabledCategories, setEnabledCategories] = useState(new Set());
-  const [selectedEvent, setSelectedEvent] = useState(null);
+  const {events, loading, error} = useCalendarData();
+  const [selectedOrganisers, setSelectedOrganisers] = useState(new Set());
+
+  const allOrganisers = useMemo(() => {
+    const labels = new Set(events.map(ev => ev.organiser).filter(Boolean));
+    return Array.from(labels).sort();
+  }, [events]);
 
   useEffect(() => {
-    setEnabledCategories(new Set(Object.keys(categoryMap)));
-  }, [categoryMap]);
+    setSelectedOrganisers(new Set(allOrganisers));
+  }, [allOrganisers.join(',')]);
 
   const eventPropGetter = useCallback((event) => {
     const style = {
@@ -119,32 +150,38 @@ export default function Calendar() {
     return {style};
   }, []);
 
-  const onSelectEvent = useCallback((event) => {
-    setSelectedEvent(event);
-  }, []);
+  const [selectedEvent, setSelectedEvent] = useState(null);
+  const onSelectEvent = useCallback((event) => setSelectedEvent(event), []);
+
+  const allSelected = selectedOrganisers.size === allOrganisers.length;
 
   const filtered = useMemo(() => {
-    return events.filter(ev => enabledCategories.has(ev.category || 'other'));
-  }, [events, enabledCategories]);
+    if (allSelected) return events;
+    return events.filter(ev => !ev.organiser || selectedOrganisers.has(ev.organiser));
+  }, [events, selectedOrganisers, allSelected]);
 
   const tooltipAccessor = useCallback((event) => {
     const parts = [];
-    if (event.description) parts.push(event.description);
+    if (event.organiser) parts.push(event.organiser);
     if (event.location) parts.push(event.location);
     return parts.join(' • ');
   }, []);
 
-  const handleToggleCategory = useCallback((key) => {
-    setEnabledCategories(prev => {
+  const handleToggle = useCallback((org) => {
+    setSelectedOrganisers(prev => {
       const next = new Set(prev);
-      if (next.has(key)) next.delete(key); else next.add(key);
+      if (next.has(org)) next.delete(org); else next.add(org);
       return next;
     });
   }, []);
 
-  const handleShowAll = useCallback(() => {
-    setEnabledCategories(new Set(Object.keys(categoryMap)));
-  }, [categoryMap]);
+  const handleSelectAll = useCallback(() => {
+    setSelectedOrganisers(new Set(allOrganisers));
+  }, [allOrganisers]);
+
+  const handleClearAll = useCallback(() => {
+    setSelectedOrganisers(new Set());
+  }, []);
 
   if (error) {
     return <div className="alert alert--danger">{String(error)}</div>;
@@ -153,13 +190,15 @@ export default function Calendar() {
   return (
     <div>
       {loading && <div className="alert alert--info">Loading calendar…</div>}
-      <Legend
-        events={events}
-        categoryMap={categoryMap}
-        enabledCategories={enabledCategories}
-        onToggleCategory={handleToggleCategory}
-        onShowAll={handleShowAll}
-      />
+      {allOrganisers.length > 0 && (
+        <OrganiserFilter
+          allOrganisers={allOrganisers}
+          selectedOrganisers={selectedOrganisers}
+          onToggle={handleToggle}
+          onSelectAll={handleSelectAll}
+          onClearAll={handleClearAll}
+        />
+      )}
       <div className="calendarWrapper">
         <RBCalendar
           localizer={localizer}
@@ -178,7 +217,7 @@ export default function Calendar() {
       {selectedEvent && (
         <EventModal event={selectedEvent} onClose={() => setSelectedEvent(null)} />)
       }
-      <p style={{marginTop:'0.5rem', fontSize:'0.9rem'}}>
+      <p style={{marginTop: '0.5rem', fontSize: '0.9rem'}}>
         Times are displayed in your browser timezone.
       </p>
     </div>
@@ -187,16 +226,16 @@ export default function Calendar() {
 
 function EventModal({event, onClose}) {
   useEffect(() => {
-    function onKey(e){ if (e.key === 'Escape') onClose(); }
+    function onKey(e) { if (e.key === 'Escape') onClose(); }
     document.addEventListener('keydown', onKey);
     return () => document.removeEventListener('keydown', onKey);
   }, [onClose]);
 
   const meta = useMemo(() => {
-    const fmt = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', dateStyle: 'medium', timeStyle: 'short' });
+    const fmt = new Intl.DateTimeFormat('de-DE', {timeZone: 'Europe/Berlin', dateStyle: 'medium', timeStyle: 'short'});
     const startStr = fmt.format(event.start);
     const endStr = fmt.format(event.end);
-    const tzNameFmt = new Intl.DateTimeFormat('de-DE', { timeZone: 'Europe/Berlin', timeZoneName: 'short' });
+    const tzNameFmt = new Intl.DateTimeFormat('de-DE', {timeZone: 'Europe/Berlin', timeZoneName: 'short'});
     const tzName = tzNameFmt.format(event.start).split(' ').pop();
     return {startStr, endStr, tzName};
   }, [event.start, event.end]);
@@ -205,17 +244,18 @@ function EventModal({event, onClose}) {
     <div className="calendarModalOverlay" onClick={onClose} role="dialog" aria-modal="true">
       <div className="calendarModal" onClick={e => e.stopPropagation()}>
         <div className="calendarModalHeader">
-          <h3 style={{margin:0}}>{event.title}</h3>
+          <h3 style={{margin: 0}}>{event.title}</h3>
           <button className="button button--sm button--secondary" onClick={onClose} aria-label="Close">✕</button>
         </div>
         <div className="calendarModalBody">
-          <p><strong>Wann (Berlin):</strong> {meta.startStr} – {meta.endStr} <em>({meta.tzName})</em></p>
+          <p><strong>When (Berlin):</strong> {meta.startStr} – {meta.endStr} <em>({meta.tzName})</em></p>
+          {event.organiser && <p><strong>Organiser:</strong> {event.organiser}</p>}
           {event.location && <p><strong>Where:</strong> {event.location}</p>}
           {event.type && <p><strong>Type:</strong> {event.type}</p>}
           {event.description && (
             <div>
               <strong>Description:</strong>
-              <p style={{marginTop:'0.25rem'}}>{event.description}</p>
+              <p style={{marginTop: '0.25rem'}}>{event.description}</p>
             </div>
           )}
         </div>

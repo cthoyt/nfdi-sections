@@ -87,7 +87,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Network Meeting",
+    "title": "NFDI4Society Network Meeting",
     "start": "2026-02-23",
     "end": "2026-02-24",
     "allDay": true,
@@ -96,11 +96,11 @@
     "organiser": "NFDI4Society",
     "category": "humanities-and-social-sciences",
     "color": "#F8C040",
-    "description": "Network Meeting",
+    "description": "NFDI4Society Network Meeting",
     "createdBy": "okoepler"
   },
   {
-    "title": "Gesamtteamtreffen",
+    "title": "NFDI4ING Gesamtteamtreffen",
     "start": "2026-03-04",
     "end": "2026-03-05",
     "allDay": true,
@@ -109,11 +109,11 @@
     "organiser": "NFDI4ING",
     "category": "engineering-sciences",
     "color": "#E83050",
-    "description": "Gesamtteamtreffen",
+    "description": "NFDI4ING Gesamtteamtreffen",
     "createdBy": "okoepler"
   },
   {
-    "title": "Community Meeting - Construct Tomorrow with Software https://nfdi4ing.de/cm-rs e26/ deRSE26 satellite event",
+    "title": "NFDI4ING Community Meeting - Construct Tomorrow with Software",
     "start": "2026-03-03",
     "end": "2026-03-03",
     "allDay": true,
@@ -122,7 +122,7 @@
     "organiser": "NFDI4ING",
     "category": "engineering-sciences",
     "color": "#E83050",
-    "description": "Community Meeting - Construct Tomorrow with Software https://nfdi4ing.de/cm-rs e26/ deRSE26 satellite event",
+    "description": "NFDI4ING Community Meeting - Construct Tomorrow with Software https://nfdi4ing.de/cm-rs e26/ deRSE26 satellite event",
     "createdBy": "okoepler"
   },
   {
@@ -139,7 +139,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Presentation of the NFDI-RFC Standardisation Concept https://events.hifis.net/event/3320/ Anmeldung bis 15.02.",
+    "title": "Presentation of the NFDI-RFC Standardisation Concept",
     "start": "2026-03-09",
     "end": "2026-03-10",
     "allDay": true,
@@ -152,7 +152,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "All-hands-on-deck meeting (intern/invite-only)",
+    "title": "NFDI-MatWerk All-hands-on-deck meeting (intern/invite-only)",
     "start": "2026-03-11",
     "end": "2026-03-12",
     "allDay": true,
@@ -161,11 +161,11 @@
     "organiser": "NFDI-MatWerk",
     "category": "engineering-sciences",
     "color": "#E83050",
-    "description": "All-hands-on-deck meeting (intern/invite-only)",
+    "description": "NFDI-MatWerk All-hands-on-deck meeting (intern/invite-only)",
     "createdBy": "okoepler"
   },
   {
-    "title": "Annual Meeting",
+    "title": "DAPHNE4NFDI Annual Meeting",
     "start": "2026-03-23",
     "end": "2026-03-25",
     "allDay": true,
@@ -174,11 +174,11 @@
     "organiser": "DAPHNE4NFDI",
     "category": "natural-sciences",
     "color": "#08B8F0",
-    "description": "Annual Meeting",
+    "description": "DAPHNE4NFDI Annual Meeting",
     "createdBy": "okoepler"
   },
   {
-    "title": "Conference (Jährliches offenes Treffen)",
+    "title": "NFDI4Energy Conference (Jährliches offenes Treffen)",
     "start": "2026-03-24",
     "end": "2026-03-25",
     "allDay": true,
@@ -187,7 +187,7 @@
     "organiser": "NFDI4Energy",
     "category": "engineering-sciences",
     "color": "#E83050",
-    "description": "Conference (Jährliches offenes Treffen)",
+    "description": "NFDI4Energy Conference (Jährliches offenes Treffen)",
     "createdBy": "okoepler"
   },
   {
@@ -217,7 +217,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Plenarsitzung",
+    "title": "NFDIxCS Plenarsitzung",
     "start": "2026-04-21",
     "end": "2026-04-22",
     "allDay": true,
@@ -230,7 +230,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "All-Hands-Meeting & NFDI@Munich participants",
+    "title": "BERD@NFDI All-Hands-Meeting & NFDI@Munich participants",
     "start": "2026-04-28",
     "end": "2026-04-29",
     "allDay": true,
@@ -243,7 +243,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Consortium Meeting (Plenary)",
+    "title": "NFDI4ChemConsortium Meeting (Plenary)",
     "start": "2026-05-12",
     "end": "2026-05-13",
     "allDay": true,
@@ -256,7 +256,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "!! Managementkreis in Präsenz !!",
+    "title": "NFDI Managementkreis",
     "start": "2026-05-19",
     "end": "2026-05-20",
     "allDay": true,
@@ -269,7 +269,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Kommunikationskreis",
+    "title": "NFDI Kommunikationskreis",
     "start": "2026-05-20",
     "end": "2026-05-21",
     "allDay": true,
@@ -282,7 +282,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Konsortialtreffen",
+    "title": "NFDI4DS Konsortialtreffen",
     "start": "2026-05-21",
     "end": "2026-05-22",
     "allDay": true,
@@ -295,7 +295,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Annual Consortium Plenary",
+    "title": "NFDI4Earth Annual Consortium Plenary",
     "start": "2026-05-27",
     "end": "2026-05-29",
     "allDay": true,
@@ -304,11 +304,11 @@
     "organiser": "NFDI4Earth",
     "category": "natural-sciences",
     "color": "#08B8F0",
-    "description": "Annual Consortium Plenary",
+    "description": "NFDI4Earth Annual Consortium Plenary",
     "createdBy": "okoepler"
   },
   {
-    "title": "Project and users meeting",
+    "title": "FAIRmat Project and users meeting",
     "start": "2026-06-17",
     "end": "2026-06-19",
     "allDay": true,
@@ -321,7 +321,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Plenary",
+    "title": "Text+ Plenary",
     "start": "2026-06-15",
     "end": "2026-06-16",
     "allDay": true,
@@ -334,7 +334,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "10|KSWD - CALL",
+    "title": "NFDI4Society 10|KSWD - CALL",
     "start": "2026-06-22",
     "end": "2026-06-23",
     "allDay": true,
@@ -373,7 +373,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Annual All-Hands Meeting",
+    "title": "NFDI4Immuno Annual All-Hands Meeting",
     "start": "2026-09-22",
     "end": "2026-09-26",
     "allDay": true,
@@ -386,7 +386,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Plenartreffen und Symposium",
+    "title": "NFDIxCS Plenartreffen und Symposium",
     "start": "2026-09-22",
     "end": "2026-09-24",
     "allDay": true,
@@ -399,7 +399,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "3rd Summer School",
+    "title": "NFDI4DS3rd Summer School",
     "start": "2026-09-25",
     "end": "2026-09-26",
     "allDay": true,
@@ -425,7 +425,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Annual Meeting",
+    "title": "GHGA Annual Meeting",
     "start": "2026-11-03",
     "end": "2026-11-05",
     "allDay": true,
@@ -438,7 +438,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Community Plenary",
+    "title": "NFDI4CultureCommunity Plenary",
     "start": "2026-11-09",
     "end": "2026-11-11",
     "allDay": true,
@@ -451,7 +451,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "Annual Meeting",
+    "title": "MaRDIAnnual Meeting",
     "start": "2026-11-11",
     "end": "2026-11-13",
     "allDay": true,
@@ -464,7 +464,7 @@
     "createdBy": "okoepler"
   },
   {
-    "title": "4. 4Memory Community Forum",
+    "title": "4. NFDI4Memory Community Forum",
     "start": "2026-11-25",
     "end": "2026-11-25",
     "allDay": true,
@@ -473,7 +473,7 @@
     "organiser": "NFDI4Memory",
     "category": "humanities-and-social-sciences",
     "color": "#F8C040",
-    "description": "4. 4Memory Community Forum",
+    "description": "4. NFDI4Memory Community Forum",
     "createdBy": "okoepler"
   },
   {
