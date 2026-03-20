@@ -11,6 +11,8 @@ The TF Metadata aims to promote the use and adoption of existing and developed (
 
 :::info Contact
 - Contact persons: Oliver Koepler, Christin Henzen, Thorsten Trippel, Heike Fliegl
+- Contact mail: [section-metadata-tf-meta-owner@lists.nfdi.de](mailto:section-metadata-tf-meta-owner@lists.nfdi.de)
+- RocketChat Channel on chat.nfdi.de [#taskforce-metadata](https://all-chat.nfdi.de/channel/taskforce-metadata)
 :::
 
 ## Resources
