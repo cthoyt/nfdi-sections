@@ -1,18 +1,18 @@
 ### Title
 
-Section Meeting Metadata
+Section Meeting International Engagement
 
 ### Date (YYYY-MM-DD)
 
-2026-06-20
+2026-03-31
 
 ### Start time (HH:MM)
 
-16:00
+13:00
 
 ### End time (HH:MM)
 
-18:00
+14:30
 
 ### All day event?
 
@@ -32,12 +32,12 @@ _No response_
 
 ### Type
 
-Section
+section
 
 ### Organiser
 
-Section-Meta
+Section International
 
 ### Description
 
-3rd General Section meeting
+Kick-Off Section Meeting International Engagement

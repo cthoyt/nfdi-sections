@@ -13,7 +13,7 @@ const firstRow = [
     link: '/docs/elsa/intro',
   },
   {
-    title: 'Common Infrastructure (INFRA)',
+    title: 'Common Infrastructures (INFRA)',
     img: require('@site/static/img/Icon-section-infra.png').default,
     alt: 'Section Common Infrastructure (INFRA)',
     description:
@@ -21,9 +21,9 @@ const firstRow = [
     link: '/docs/infra/intro',
   },
   {
-    title: 'Meta',
+    title: '(Meta)data, Terminologies, Provenance (METADATA)',
     img: require('@site/static/img/Icon-section-meta.png').default,
-    alt: 'Meta section',
+    alt: 'Section (Meta)data, Terminologies, Provenance',
     description:
       'Governance, metadata, terminology, and provenance across sections.',
     link: '/docs/meta/intro',
@@ -32,15 +32,15 @@ const firstRow = [
 
 const secondRow = [
   {
-    title: 'Education & Training',
+    title: 'Training & Education (EDUTRAIN)',
     img: require('@site/static/img/Icon-section-edutrain.png').default,
-    alt: 'Education and Training section',
+    alt: 'Section Training & Education',
     description:
       'Skills, training materials, and community capacity building.',
     link: '/docs/edutrain/intro',
   },
   {
-    title: 'Industry Engagement',
+    title: 'Industry Engagement (INDUSTRY)',
     img: require('@site/static/img/Icon-section-industry.png').default,
     alt: 'Industry Engagement section',
     description:
@@ -48,7 +48,7 @@ const secondRow = [
     link: '/docs/industry/intro',
   },
   {
-    title: 'International Engagement',
+    title: 'International Engagement (INT)',
     img: require('@site/static/img/Icon-section-international.png').default,
     alt: 'Section International Engagement',
     description:
