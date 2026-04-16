@@ -2,7 +2,7 @@
 title: MaRDI
 ---
 
-This page was automatically generated on 2026-04-15 using Semantic Farm
+This page was automatically generated on 2026-04-16 using Semantic Farm
 v0.13.40. See this collection in the
 [Semantic Farm](https://semantic.farm/collection/0000027).
 

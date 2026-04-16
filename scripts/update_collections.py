@@ -9,21 +9,22 @@
 
 """Update collections."""
 
-import os
 import datetime
-from textwrap import dedent
+import os
 from pathlib import Path
+from textwrap import dedent
+
 import bioregistry
 import bioregistry.version
-from bioregistry.constants import NFDI_ROR
 import click
+from bioregistry.constants import NFDI_ROR
 from tabulate import tabulate
 
 HERE = Path(__file__).parent.resolve()
 ROOT = HERE.parent.resolve()
 ONTOLOGIES = ROOT.joinpath("docs", "meta", "wg_onto", "used-ontologies").resolve()
 
-RENAMES = {"text+": "text-plus", "berd@nfdi": "bern-nfdi"}
+RENAMES = {"text+": "text-plus", "berd@nfdi": "berd-nfdi"}
 
 
 @click.command()
@@ -119,7 +120,10 @@ def main() -> None:
 
     ONTOLOGIES.joinpath("index.md").write_text(index_text)
 
-    os.system(f"npx --yes prettier --check --prose-wrap always --write '{ONTOLOGIES}/*.md'")
+    os.system(
+        f"npx --yes prettier --check --prose-wrap always --write '{ONTOLOGIES}/*.md'"
+    )
+
 
 if __name__ == "__main__":
     main()
