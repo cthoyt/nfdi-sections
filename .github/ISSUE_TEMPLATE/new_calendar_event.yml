@@ -69,6 +69,34 @@ body:
       label: Organiser
       description: Select the organiser responsible for this event
       options:
+        - NFDI
+        - Base4NFDI
+        - BERD@NFDI
+        - DAPHNE4NFDI
+        - DataPLANT
+        - FAIRagro
+        - FAIRmat
+        - GHGA
+        - KonsortSWD
+        - MaRDI
+        - NFDI4Biodiversity
+        - NFDI4BIOIMAGE
+        - NFDI4Cat
+        - NFDI4Chem
+        - NFDI4Culture
+        - NFDI4DataScience
+        - NFDI4Earth
+        - NFDI4Energy
+        - NFDI4Health
+        - NFDI4Immuno
+        - NFDI4Ing
+        - NFDI4Memory
+        - NFDI4Microbiota
+        - NFDI4MatWerk
+        - NFDI4Objects
+        - NFDIxCS
+        - PUNCH4NFDI
+        - Text+
         - Section-Meta
         - Section ELSA
         - Section Infra
