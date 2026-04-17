@@ -1,0 +1,137 @@
+name: New Calendar Event
+description: Submit a calendar entry to be added to the site
+title: "[Calendar] <Short title>"
+labels:
+  - calendar
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: Event title as it should appear on the calendar
+      placeholder: WG Meeting – Search & Harvesting
+    validations:
+      required: true
+  - type: input
+    id: date
+    attributes:
+      label: Date (YYYY-MM-DD)
+      description: "Date of the event (Berlin time), e.g., 2025-10-01"
+      placeholder: "2025-10-01"
+    validations:
+      required: true
+  - type: input
+    id: start_time
+    attributes:
+      label: Start time (HH:MM)
+      description: "Start (Berlin time), e.g., 09:00"
+      placeholder: "09:00"
+  - type: input
+    id: end_time
+    attributes:
+      label: End time (HH:MM)
+      description: "End (Berlin time), e.g., 10:00"
+      placeholder: "10:00"
+  - type: dropdown
+    id: allDay
+    attributes:
+      label: All day event?
+      options: ["false", "true"]
+      default: 0
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: e.g. Online, or venue
+      placeholder: Online
+  - type: input
+    id: url
+    attributes:
+      label: Link (optional)
+      description: URL opened when clicking the event (meeting page, registration, etc.)
+      placeholder: https://...
+  - type: input
+    id: website
+    attributes:
+      label: event.website (optional)
+      description: URL of the event's official website
+      placeholder: https://...
+  - type: input
+    id: type
+    attributes:
+      label: Type
+      description: Category used for filtering (e.g., WG, TF, consortium)
+      placeholder: WG
+  # Options sourced from static/calendar-organisers.json
+  - type: dropdown
+    id: organiser
+    attributes:
+      label: Organiser
+      description: Select the organiser responsible for this event
+      options:
+        - NFDI
+        - Base4NFDI
+        - BERD@NFDI
+        - DAPHNE4NFDI
+        - DataPLANT
+        - FAIRagro
+        - FAIRmat
+        - GHGA
+        - KonsortSWD
+        - MaRDI
+        - NFDI4Biodiversity
+        - NFDI4BIOIMAGE
+        - NFDI4Cat
+        - NFDI4Chem
+        - NFDI4Culture
+        - NFDI4DataScience
+        - NFDI4Earth
+        - NFDI4Energy
+        - NFDI4Health
+        - NFDI4Immuno
+        - NFDI4Ing
+        - NFDI4Memory
+        - NFDI4Microbiota
+        - NFDI4MatWerk
+        - NFDI4Objects
+        - NFDIxCS
+        - PUNCH4NFDI
+        - Text+
+        - Section-Meta
+        - Section ELSA
+        - Section Infra
+        - Section Edu
+        - Section Industry
+        - Section International
+        - WG Onto (Section-Meta)
+        - WG Terminology Services (Section-Meta)
+        - WG Ethics (Section ELSA)
+        - WG Data Protection (Section ELSA)
+        - WG LARA (Section ELSA)
+        - WG Overall Architecture (OA) (Section Infra)
+        - WG Data Integration (DI) (Section Infra)
+        - WG Data Management Planning (DMP) (Section Infra)
+        - WG Data Science and Artificial Intelligence (DSAI) (Section Infra)
+        - WG ELN (Section Infra)
+        - WG Identity and Access Management (IAM) (Section Infra)
+        - WG Infrastructure and Data Security (IDS) (Section Infra)
+        - WG Long-term Access and Preservation (LTA) (Section Infra)
+        - WG Multi-Cloud (MC) (Section Infra)
+        - WG Persistent Identifiers (PID) (Section Infra)
+        - WG Research Software Engineering (RSE) (Section Infra)
+        - WG Dalia (Section Edu)
+        - WG Benefits, Costs and Risks (Section Industry)
+        - WG Cooperation Models and Agreements (Section Industry)
+        - WG Data Spaces & Interoperability (Section Industry)
+        - WG Knowledge Transfer and Impact (Section Industry)
+        - WG Landscape Survey (Section International)
+        - WG EOSC Node Germany (Section International)
+        - WG Outreach (Section International)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Short description shown in tooltip/modal
+      placeholder: Short description of the meeting
