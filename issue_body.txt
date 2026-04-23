@@ -1,5 +1,10 @@
 ### Title
 
+Seaction Meeting EduTrain
+
+### Date (YYYY-MM-DD)
+
+2026-04-30
 Section Meeting Common Infrastructures
 
 ### Date (YYYY-MM-DD)
@@ -12,6 +17,7 @@ Section Meeting Common Infrastructures
 
 ### End time (HH:MM)
 
+11:00
 12:00
 
 ### All day event?
@@ -20,6 +26,7 @@ false
 
 ### Location
 
+Online
 hybrid
 
 ### Link (optional)
