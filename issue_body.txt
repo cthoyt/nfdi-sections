@@ -1,18 +1,18 @@
 ### Title
 
-NFDI Consortia Assembly
+Section Meeting Common Infrastructures
 
 ### Date (YYYY-MM-DD)
 
-2026-04-17
+2026-04-15
 
 ### Start time (HH:MM)
 
-09:00
+10:00
 
 ### End time (HH:MM)
 
-13:00
+12:00
 
 ### All day event?
 
@@ -20,7 +20,7 @@ false
 
 ### Location
 
-_No response_
+hybrid
 
 ### Link (optional)
 
@@ -40,4 +40,4 @@ NFDI
 
 ### Description
 
-NFDI Consortia Assembly
+_No response_
