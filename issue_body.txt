@@ -1,18 +1,18 @@
 ### Title
 
-NFDI Consortia Assembly
+Meeting Section Working Group Coordinators
 
 ### Date (YYYY-MM-DD)
 
-2026-04-17
+2026-04-24
 
 ### Start time (HH:MM)
 
-09:00
+10:00
 
 ### End time (HH:MM)
 
-13:00
+11:00
 
 ### All day event?
 
@@ -32,7 +32,7 @@ _No response_
 
 ### Type
 
-_No response_
+WG
 
 ### Organiser
 
@@ -40,4 +40,4 @@ NFDI
 
 ### Description
 
-NFDI Consortia Assembly
+_No response_
