@@ -37,6 +37,7 @@ REGENERATE_COMMANDS = dedent("""\
 VERSION = bioregistry.version.get_version()
 V_LINK = f"[Semantic Farm v{VERSION}](https://github.com/biopragmatics/bioregistry/releases/tag/v{VERSION})"
 
+
 @click.command()
 def main() -> None:
     for path in ONTOLOGIES.glob("*.md"):
@@ -83,7 +84,9 @@ def main() -> None:
                 text += f"- [{maintainer.name.strip()}](https://semantic.farm/orcid:{maintainer.orcid})\n"
             text += "\n"
         else:
-            text += "## Maintainers\n\nThis collection does not yet have maintainers.\n\n"
+            text += (
+                "## Maintainers\n\nThis collection does not yet have maintainers.\n\n"
+            )
 
         rows = []
 
@@ -122,7 +125,7 @@ def main() -> None:
         text += dedent(f"""\
         ## Colophon
 
-        This page was automatically generated on {today} using {V_LINK} using the following commands:
+        This page was automatically generated on {today} using {V_LINK} by running the following commands:
 
         """)
         text += REGENERATE_COMMANDS
