@@ -89,11 +89,6 @@ const config = {
           href: '/',
         },
         items: [
-          {
-            to: '/docs/nfdi-sections/intro',   // ← the “NFDI Sections” text link
-            label: 'NFDI Sections',
-            position: 'left',
-          },
           { type: 'doc', docId: 'calendar', label: 'Calendar', position: 'left' },
           {
             type: 'doc',
