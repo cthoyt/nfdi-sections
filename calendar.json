@@ -216,6 +216,30 @@
     "createdBy": "okoepler"
   },
   {
+    "title": "Section Meeting Common Infrastructures",
+    "start": "2026-04-15T10:00:00+02:00",
+    "end": "2026-04-15T12:00:00+02:00",
+    "allDay": false,
+    "location": "hybrid",
+    "type": "Event",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "createdBy": "Wiljes"
+  },
+  {
+    "title": "NFDI Consortia Assembly",
+    "start": "2026-04-17T09:00:00+02:00",
+    "end": "2026-04-17T13:00:00+02:00",
+    "allDay": false,
+    "type": "Event",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "description": "NFDI Consortia Assembly",
+    "createdBy": "okoepler"
+  },
+  {
     "title": "NFDI nach 2029",
     "start": "2026-04-21",
     "end": "2026-04-22",
@@ -242,6 +266,17 @@
     "createdBy": "okoepler"
   },
   {
+    "title": "Meeting Section Working Group Coordinators",
+    "start": "2026-04-24T10:00:00+02:00",
+    "end": "2026-04-24T11:00:00+02:00",
+    "allDay": false,
+    "type": "WG",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "createdBy": "Wiljes"
+  },
+  {
     "title": "BERD@NFDI All-Hands-Meeting & NFDI@Munich participants",
     "start": "2026-04-28",
     "end": "2026-04-29",
@@ -253,6 +288,30 @@
     "color": "#F8C040",
     "description": "All-Hands-Meeting & NFDI@Munich participants",
     "createdBy": "okoepler"
+  },
+  {
+    "title": "Seaction Meeting EduTrain",
+    "start": "2026-04-30T09:00:00+02:00",
+    "end": "2026-04-30T11:00:00+02:00",
+    "allDay": false,
+    "location": "Online",
+    "type": "Event",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "createdBy": "Wiljes"
+  },
+  {
+    "title": "Section Meeting Common Infrastructures",
+    "start": "2026-05-06T10:00:00+02:00",
+    "end": "2026-05-06T12:00:00+02:00",
+    "allDay": false,
+    "location": "Online",
+    "type": "Event",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "createdBy": "Wiljes"
   },
   {
     "title": "NFDI4ChemConsortium Meeting (Plenary)",
@@ -347,8 +406,8 @@
   },
   {
     "title": "Section Meeting Metadata",
-    "start": "2026-06-20T16:00:00+02:00",
-    "end": "2026-06-20T18:00:00+02:00",
+    "start": "2026-06-30T16:00:00+02:00",
+    "end": "2026-06-30T18:00:00+02:00",
     "allDay": false,
     "type": "Section",
     "organiser": "Section-Meta",
@@ -369,6 +428,31 @@
     "color": "#F8C040",
     "description": "10|KSWD - CALL",
     "createdBy": "okoepler"
+  },
+  {
+    "title": "Meeting of Section Common Infrastructures",
+    "start": "2026-06-24T10:00:00+02:00",
+    "end": "2026-06-24T12:00:00+02:00",
+    "allDay": false,
+    "type": "Event",
+    "organiser": "NFDI",
+    "category": "nfdi",
+    "color": "#003764",
+    "createdBy": "Wiljes"
+  },
+  {
+    "title": "Section Int WG Landscape Monthly Meeting",
+    "start": "2026-07-01T11:00:00+02:00",
+    "end": "2026-07-01T12:00:00+02:00",
+    "allDay": false,
+    "location": "Online",
+    "url": "https://desy.zoom.us/j/66839511286",
+    "type": "WG",
+    "organiser": "WG Landscape Survey (Section International)",
+    "category": "section-international",
+    "color": "#4CAF50",
+    "description": "See our rolling [agenda](https://docs.google.com/document/d/1kvNkhYTdnMuBjMOZS5RcwXZa1xCi57heHeRf9VbQIbw/edit?tab=t.0)",
+    "createdBy": "cthoyt"
   },
   {
     "title": "Life Sciences 4 NFDI Bioinformatics Workshop",
